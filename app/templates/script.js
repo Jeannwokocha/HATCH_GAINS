@@ -1,31 +1,31 @@
 "use strict";
-// Get elements
-const addTaskBtn = document.getElementById("add-task-btn");
-const taskInput = document.getElementById("new-task");
-const taskList = document.getElementById("task-list");
 
-// Add event listener for the "Add Task" button
-addTaskBtn.addEventListener("click", addTask);
+const overlay = document.querySelector(".overlay");
+const showDropdown = document.querySelector(".show");
+const hideDropdown = document.querySelector(".hide");
+const dropdown = document.querySelector(".dropdown");
+const logo = document.querySelector(".logo");
+// const signInBtn = document.querySelector("#signLink");
+// const signIcon = document.querySelector(".hero-sign");
 
-// Function to add a new task
-function addTask() {
-  const taskText = taskInput.value.trim();
+showDropdown.addEventListener("click", () => {
+  overlay.style.display = "block";
+  showDropdown.style.display = "none";
+  hideDropdown.style.display = "inline-block";
+  dropdown.style.marginLeft = "0";
+  logo.classList.add("pop");
+});
+hideDropdown.addEventListener("click", () => {
+  overlay.style.display = "none";
+  showDropdown.style.display = "inline-block";
+  hideDropdown.style.display = "none";
+  dropdown.style.marginLeft = "-60%";
+  logo.classList.remove("pop");
+});
 
-  // Check if the input is not empty
-  if (taskText !== "") {
-    // Create new task list item
-    const li = document.createElement("li");
-    li.innerHTML = `${taskText} <button class="delete-btn">Delete</button>`;
-
-    // Append new task to the list
-    taskList.appendChild(li);
-
-    // Clear the input field
-    taskInput.value = "";
-
-    // Add delete functionality to the new button
-    li.querySelector(".delete-btn").addEventListener("click", () => {
-      li.remove();
-    });
-  }
-}
+// signInBtn.addEventListener("mouseenter", () => {
+//   signIcon.style.display = "inline";
+// });
+// signInBtn.addEventListener("mouseleave", () => {
+//   signIcon.style.display = "block";
+// });

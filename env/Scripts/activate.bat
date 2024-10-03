@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\new user\Desktop\Hatch_Gains\env
+set VIRTUAL_ENV=C:\Users\user\Desktop\HATCH_GAINS\env
 
 if not defined PROMPT set PROMPT=$P$G
 

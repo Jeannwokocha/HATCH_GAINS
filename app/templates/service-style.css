@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+  padding-right: 50px;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container ul li {
+  list-style: none;
+  padding-left: 50px;
+}
+.container ul li a {
+  text-decoration: none;
+  color: black;
+}
+.btn1 {
+  height: 50px;
+  width: 100px;
+  background-color: #204e51;
+
+  color: beige;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+.btn2 {
+  height: 50px;
+  width: 100px;
+  /* background-color: green; */
+  color: fuchsia;
+  border-radius: 20px;
+  margin: 50px;
+}
+.sec1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec1-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  columns: #204e51;
+  /* background-color: blue; */
+}
+
+.content {
+  width: 100%;
+  height: 80%;
+  margin: 30px 0;
+  /* background-color: pink; */
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont_1 {
+  width: 317px;
+  height: 317px;
+  border-radius: 50%;
+  /* background-color: red; */
+  overflow: hidden;
+}
+.logo {
+  height: 70px;
+}
+.cont_2 {
+  width: 717px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.cont_2 p {
+  font-size: larger;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img2 {
+  width: 100px;
+}
+.big_box1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big_box2 {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.discover {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.459)
+    ),
+    url(images/African-Catfish.png);
+  background-size: cover;
+  background-position: center;
+}
+.disco {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.btn4 {
+  background-color: #204e51;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+}
+.btn5 {
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+}
+.btn6 {
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+.discoh1 {
+  font-size: 60px;
+}
+.form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  /* background-color: #d9d9d9; */
+}
+.form-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position:relative;
+}
+.input {
+    width: 600px;
+    height: 500px;
+    background-color: #204E51;
+    color: white;
+}
+.time {
+    width: 650px;
+    height: 300px;
+    background-color: rgb(230, 222, 222);
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: -1;
+}
+
+.support {
+    width: 80%;
+    height: 500px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #204E51;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.footer-container {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.cta {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cta ul {
+    margin-top: 30px    ;
+    list-style: none;
+}
+.cta ul li {
+    width: 100%;
+    height: 50px;
+}
+.cta ul li a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="products.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -18,6 +17,7 @@
           <li><a href="#">About Us</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Services</a></li>
+          <li><a href="#">Cart</a></li>
         </ul>
         <div class="auth-buttons">
           <button class="login-btn">Login</button>
@@ -40,8 +40,8 @@
         <div class="product-card">
           <img src="images/fingerlings.jpeg" alt="Fingerlings" />
           <h3>Fingerlings</h3>
-          <p>3g</p>
-          <p>₦50</p>
+          <p class="weight">3g</p>
+          <button class="price">₦50</button>
           <div class="quantity-controls">
             <button
               class="decrease"
@@ -59,8 +59,8 @@
         <div class="product-card">
           <img src="images/fingerlings.jpeg" alt="Post-Fingerlings" />
           <h3>Post-Fingerlings</h3>
-          <p>5g</p>
-          <p>₦80</p>
+          <p class="weight">5g</p>
+          <button class="price">₦80</button>
           <div class="quantity-controls">
             <button
               class="decrease"
@@ -81,8 +81,8 @@
         <div class="product-card">
           <img src="images/fingerlings.jpeg" alt="Juvenile" />
           <h3>Juvenile</h3>
-          <p>10g</p>
-          <p>₦120</p>
+          <p class="weight">10g</p>
+          <button class="price">₦120</button>
           <div class="quantity-controls">
             <button class="decrease" onclick="changeQuantity('juvenile', -1)">
               &#8595;
@@ -106,8 +106,8 @@
         <div class="product-card">
           <img src="images/livecatfishes.png" alt="Fingerlings" />
           <h3>Fingerlings</h3>
-          <p>3g</p>
-          <p>₦50</p>
+          <p class="weight">3g</p>
+          <button class="price">₦50</button>
           <div class="quantity-controls">
             <button
               class="decrease"
@@ -125,8 +125,8 @@
         <div class="product-card">
           <img src="images/livecatfishes.png" alt="Post-Fingerlings" />
           <h3>Post-Fingerlings</h3>
-          <p>5g</p>
-          <p>₦80</p>
+          <p class="weight">5g</p>
+          <button class="price">₦80</button>
           <div class="quantity-controls">
             <button
               class="decrease"
@@ -147,8 +147,8 @@
         <div class="product-card">
           <img src="images/livecatfishes.png" alt="Juvenile" />
           <h3>Juvenile</h3>
-          <p>10g</p>
-          <p>₦120</p>
+          <p class="weight">10g</p>
+          <button class="price">₦120</button>
           <div class="quantity-controls">
             <button class="decrease" onclick="changeQuantity('juvenile', -1)">
               &#8595;
@@ -172,8 +172,8 @@
         <div class="product-card">
           <img src="images/smoked catfishes.jpg" alt="Fingerlings" />
           <h3>Fingerlings</h3>
-          <p>3g</p>
-          <p>₦50</p>
+          <p class="weight">3g</p>
+          <button class="price">₦50</button>
           <div class="quantity-controls">
             <button
               class="decrease"
@@ -191,8 +191,8 @@
         <div class="product-card">
           <img src="images/smoked catfishes.jpg" alt="Post-Fingerlings" />
           <h3>Post-Fingerlings</h3>
-          <p>5g</p>
-          <p>₦80</p>
+          <p class="weight">5g</p>
+          <button class="price">₦80</button>
           <div class="quantity-controls">
             <button
               class="decrease"
@@ -213,8 +213,8 @@
         <div class="product-card">
           <img src="images/smoked catfishes.jpg" alt="Juvenile" />
           <h3>Juvenile</h3>
-          <p>10g</p>
-          <p>₦120</p>
+          <p class="weight">10g</p>
+          <button class="price">₦120</button>
           <div class="quantity-controls">
             <button class="decrease" onclick="changeQuantity('juvenile', -1)">
               &#8595;
@@ -230,7 +230,6 @@
 
     <footer>
       <div class="footer-container">
-        <!-- Company Info -->
         <div class="footer-section company-info">
           <h2>Hatchgains Farms</h2>
           <p>
@@ -253,7 +252,6 @@
           </div>
         </div>
 
-        <!-- Pages Links -->
         <div class="footer-section">
           <h3>Pages</h3>
           <ul>
@@ -264,7 +262,6 @@
           </ul>
         </div>
 
-        <!-- About Links -->
         <div class="footer-section">
           <h3>About</h3>
           <ul>
@@ -277,6 +274,306 @@
       </div>
     </footer>
 
+    <script src="products.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatchgains Products</title>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/hatchgain Logo 1.png" alt="Hatchgains Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Products</h1>
+
+      <!-- Fingerlings Product Category -->
+      <section class="product-category">
+        <div>
+          <h2>Fingerlings</h2>
+          <p><span>Minimum Order -</span> 30 grams</p>
+        </div>
+      </section>
+
+      <!-- Fingerlings Product Section -->
+      <section class="product-section">
+        <div class="product-card">
+          <img src="images/fingerlings.jpeg" alt="Fingerlings" />
+          <h3>Fingerlings</h3>
+          <p class="weight">3g</p>
+          <button class="price">₦50</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('fingerlings', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="fingerlings-quantity">1</span>
+            <button class="increase" onclick="changeQuantity('fingerlings', 1)">
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/fingerlings.jpeg" alt="Post-Fingerlings" />
+          <h3>Post-Fingerlings</h3>
+          <p class="weight">5g</p>
+          <button class="price">₦80</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('post-fingerlings', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="post-fingerlings-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('post-fingerlings', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/fingerlings.jpeg" alt="Juvenile" />
+          <h3>Juvenile</h3>
+          <p class="weight">10g</p>
+          <button class="price">₦120</button>
+          <div class="quantity-controls">
+            <button class="decrease" onclick="changeQuantity('juvenile', -1)">
+              &#8595;
+            </button>
+            <span id="juvenile-quantity">1</span>
+            <button class="increase" onclick="changeQuantity('juvenile', 1)">
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+      </section>
+
+      <!-- Live Catfish Product Category -->
+      <section class="product-category">
+        <div>
+          <h2>Live Catfish</h2>
+          <p><span>Minimum Order -</span> 30 grams</p>
+        </div>
+      </section>
+
+      <!-- Live Catfish Product Section -->
+      <section class="product-section">
+        <div class="product-card">
+          <img src="images/livecatfishes.png" alt="Live Catfish Fingerlings" />
+          <h3>Fingerlings</h3>
+          <p class="weight">3g</p>
+          <button class="price">₦50</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('live-fingerlings', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="live-fingerlings-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('live-fingerlings', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/livecatfishes.png" alt="Post-Fingerlings" />
+          <h3>Post-Fingerlings</h3>
+          <p class="weight">5g</p>
+          <button class="price">₦80</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('live-post-fingerlings', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="live-post-fingerlings-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('live-post-fingerlings', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/livecatfishes.png" alt="Juvenile" />
+          <h3>Juvenile</h3>
+          <p class="weight">10g</p>
+          <button class="price">₦120</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('live-juvenile', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="live-juvenile-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('live-juvenile', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+      </section>
+
+      <!-- Smoked Catfish Product Category -->
+      <section class="product-category">
+        <div>
+          <h2>Smoked Catfish</h2>
+          <p><span>Minimum Order -</span> 30 grams</p>
+        </div>
+      </section>
+
+      <!-- Smoked Catfish Product Section -->
+      <section class="product-section">
+        <div class="product-card">
+          <img src="images/smoked catfishes.jpg" alt="Smoked Fingerlings" />
+          <h3>Fingerlings</h3>
+          <p class="weight">3g</p>
+          <button class="price">₦50</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('smoked-fingerlings', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="smoked-fingerlings-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('smoked-fingerlings', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/smoked catfishes.jpg" alt="Post-Fingerlings" />
+          <h3>Post-Fingerlings</h3>
+          <p class="weight">5g</p>
+          <button class="price">₦80</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('smoked-post-fingerlings', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="smoked-post-fingerlings-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('smoked-post-fingerlings', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/smoked catfishes.jpg" alt="Juvenile" />
+          <h3>Juvenile</h3>
+          <p class="weight">10g</p>
+          <button class="price">₦120</button>
+          <div class="quantity-controls">
+            <button
+              class="decrease"
+              onclick="changeQuantity('smoked-juvenile', -1)"
+            >
+              &#8595;
+            </button>
+            <span id="smoked-juvenile-quantity">1</span>
+            <button
+              class="increase"
+              onclick="changeQuantity('smoked-juvenile', 1)"
+            >
+              &#8593;
+            </button>
+          </div>
+          <button class="Add-to-cart">Add to cart</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-section company-info">
+          <h2 class="title">Hatchgains Farms</h2>
+          <p>
+            Li Europan lingues es membres del sam famille. Hatchgains Farms is
+            committed to delivering quality products for your farming needs.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h2 class="title">Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h2 class="title">Contact Us</h2>
+          <p>Email: info@hatchgains.com</p>
+          <p>Phone: +234 123 456 789</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
     <script src="products.js"></script>
   </body>
 </html>

@@ -148,92 +148,131 @@ h1 {
 
 .product-section {
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   /* background-color: aqua; */
-}
-
-.product-section .product-grid .card h2 {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.product-section .product-grid .card p {
-  font-size: 0.8rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.product-section .product-grid .card button {
-  width: 120px;
-  height: 40px;
-  background-color: #054343;
-  color: white;
-  font-weight: bold;
-  border-radius: 15px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(120px, 1fr)
-  ); /* Smaller column size */
-  gap: 10px; /* Reduced gap */
-}
-
-.card {
-  background-color: white;
-  border-radius: 6px;
-  padding: 10px; /* Slightly increased padding */
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 180px; /* Increased maximum width */
-  margin: auto; /* Center the cards */
-}
-
-.card img {
-  width: 90%; /* Make the images a bit larger */
-  height: auto;
-  border-radius: 6px;
-}
-
-.icons {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  gap: 30px; /* Increased the gap between cards */
+  padding: 20px;
 }
 
-.icons span {
-  margin: 0 3px; /* Reduced space between icons */
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px; /* Increased padding for more space inside the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 250px; /* Increased width of the card */
+  text-align: center;
+}
+
+.product-card img {
+  width: 120px; /* Increased size of the image */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.4em; /* Increased font size for the product name */
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  margin: 8px 0; /* Increased margin for better spacing */
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1em; /* Slightly increased font size */
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #005f5f;
+  color: white;
+  border: none;
+  padding: 7px 10px; /* Increased button padding for a larger button */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px; /* Increased button text size */
+}
+
+button:hover {
+  background-color: #004c4c;
+}
+
+span {
+  margin: 0 15px; /* Increased space between quantity and buttons */
+  font-size: 20px; /* Increased font size of the quantity number */
 }
 
 footer {
-  background-color: #063d3d;
+  background-color: #2b5c55; /* Dark green background */
+  padding: 40px 0; /* Padding around the footer */
   color: white;
-  padding: 40px;
 }
 
-.footer-content {
+.footer-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.footer-left {
-  margin-bottom: 20px;
+.footer-section {
+  width: 30%;
 }
 
-.footer-links ul {
-  list-style-type: none;
-}
-
-.footer-links ul li {
+.company-info h2 {
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
 
-.footer-links ul li a {
+.company-info p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-section h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
   color: white;
   text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Media Queries */

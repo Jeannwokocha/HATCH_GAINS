@@ -1,12 +1,10 @@
 "use strict";
-document.querySelectorAll(".cart").forEach((cart) => {
-  cart.addEventListener("click", () => {
-    alert("Added to cart!");
-  });
-});
+function changeQuantity(product, change) {
+  const quantityElement = document.getElementById(`${product}-quantity`);
+  let currentQuantity = parseInt(quantityElement.textContent);
 
-document.querySelectorAll(".heart").forEach((heart) => {
-  heart.addEventListener("click", () => {
-    alert("Added to favorites!");
-  });
-});
+  // Ensure quantity doesn't go below 1
+  if (currentQuantity + change >= 1) {
+    quantityElement.textContent = currentQuantity + change;
+  }
+}
